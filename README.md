@@ -1,2 +1,2 @@
-# bike_rental
+# Bike_rental
 End-to-end project on Bike rental forecast
