@@ -2,4 +2,18 @@ Fine tuning or optimizing Random Forest Regressor model.
 GridSearchCV is used for the above operation as the number of instances are not high enough, hence, this method would be most efficient.
 Using GridSearchCV, we get information about best parameters, which would subsequently be used for defining our final model.
 This would also give us knowledge of best estiators.
+Value of best parameters: {'max_depth': 28, 'max_features': 10, 'n_estimators': 150}
+We then go on to extraxt feature importances in predicting the final model, with _feature_impotances_ function and get following values for each:
+  [('yr', 0.0014549338375348933),
+  ('workingday', 0.06993018485751776),
+  ('windspeed', 0.00907718520048854),
+  ('weekday', 0.017906690160176462),
+  ('weathersit', 0.016883359714978893),
+  ('temp', 0.09373438151493899),
+  ('season', 0.004248883034393516),
+  ('mnth', 0.0057027857239188426),
+  ('hum', 0.031767551745058825),
+  ('hr', 0.5834864844356165),
+  ('holiday', 0.002151070285869058),
+  ('dayCount', 0.1636564894895078)]
 The optimized parameters of our model are then fitted on training dataset. 
