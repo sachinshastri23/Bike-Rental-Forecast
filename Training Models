@@ -1,0 +1,14 @@
+Creating a test & train split of the dataset.
+  Since train_test_split() function uses random sampling, hence the dataset split needs to be sorted by 'dayCount' feature.
+  We create a 70:30 train-test split.
+  Creating a trainingCols feature after dropping 'cnt' feature from training dataset.
+  Absorb the 'cnt' feature in new dataset named trainingLabel.
+  
+Various predictive models like Linear Regression, Decision Tree Regressor and ensemble methods like Random Forest Regressor are used. 
+Root mean square error is calculated for each of the models with cross-validation (cv=10)
+Errors are as follows:
+  Linear Regression: Mean of RMSE:141.1902290118175
+                     Standard deviation: 37.55565075919573
+  Decision Tree: Mean: 8.03049759858746
+                 Standard deviation: 25.035783082114 
+  Random Forest Regressor: Mean:
