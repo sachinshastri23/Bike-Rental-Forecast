@@ -1,5 +1,5 @@
-Fine tuning or optimizing the selected model.
-GridSearchCV is used for the above operation as the number of instances are not high enough, this method would be most efficient.
+Fine tuning or optimizing Random Forest Regressor model.
+GridSearchCV is used for the above operation as the number of instances are not high enough, hence, this method would be most efficient.
 Using GridSearchCV, we get information about best parameters, which would subsequently be used for defining our final model.
 This would also give us knowledge of best estiators.
 The optimized parameters of our model are then fitted on training dataset. 
