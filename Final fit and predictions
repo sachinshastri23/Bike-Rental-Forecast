@@ -1,0 +1,3 @@
+Finally our model is fitted on test dataset to return predicted values to target data ('cnt').
+This predicted data is the matched against testLabel dataset to calculate root mean square error (RMSE).
+Final RMSE comes out to be: 39.50507676859462, which was less than the threshold value of 45, which classifies our prediction model as accurate.
