@@ -9,6 +9,9 @@ Root mean square error is calculated for each of the models with cross-validatio
 Errors are as follows:
   Linear Regression: Mean of RMSE:141.1902290118175
                      Standard deviation: 37.55565075919573
-  Decision Tree: Mean: 8.03049759858746
+  Decision Tree: Mean: 88.03049759858746
                  Standard deviation: 25.035783082114 
-  Random Forest Regressor: Mean:
+  Random Forest Regressor: Mean: 67.33731857326259
+                           Standard deviation: 25.558568460925994
+As is evident, the mean of RMSE as obtained from Random Forest Regression is lowest and its standard deviation is also good.
+We shall consider this model for learning our training dataset.
