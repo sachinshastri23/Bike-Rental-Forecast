@@ -1,0 +1,20 @@
+Firstly, the dataset consists of 17379 entries (rows/instances) &  total 17 columns/features.
+Out of all these instances we have zero null/na values in our dataset.
+
+Upon an overview of the given dataset, it contains some features which may not be needed for this problem:
+
+  instant - This is just an index holder.
+  casual - It contains the count of casual bike riders, which are already included in the overall users count i.e. 'cnt', hence not needed.
+  registered - It contains the registered bike riders, which again, like the casual riders, are already included in the overall users count i.e. 'cnt', hence not needed.
+  atemp - It is the 'feel' temperature, which may not be needed, as we already have 'temp' feature which contains temperature of the area - duplicate feature, hence     not needed.
+  dteday - It is the Date. Since, our prediction is not based on the Date, its based on hour of the day, hence Date is not needed.
+
+Hence, these features are dropped for further anaysis.
+
+Scaling: Features like temp, hum & windspeed are in different ranges, hence they would require scaling.
+  This we carry out by calling StandardScaler function from Scikit learn library.
+  Upon carrying out fit_transform on these features, we get their respective standard deviations as:
+                                                                  temp         1.000029
+                                                                  hum          1.000029
+                                                                  windspeed    1.000029
+Since, we require an hourly prediction of bike rental, we create a new feature, dayCount by dividing
